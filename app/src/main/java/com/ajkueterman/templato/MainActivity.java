@@ -138,19 +138,38 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         one.setFrom("AJ");
         one.setSubject("Hello World!");
         one.setMessage("Welcome to my sample app!");
-        one.setTimeStamp(new Date());
         one.setRead(true);
+        one.setTimeStamp(new Date());
         Notification two = new Notification();
         two.setFrom("Bruce Banner");
         two.setSubject("Puny App");
         two.setMessage("Is this app the best you got?");
-        two.setTimeStamp(new Date());
         two.setRead(false);
+        two.setTimeStamp(new Date());
+        Notification three = new Notification();
+        three.setFrom("Darth Vader");
+        three.setSubject("Luke...");
+        three.setMessage("I am your father!");
+        three.setRead(false);
+        three.setTimeStamp(new Date());
+        Notification four = new Notification();
+        four.setFrom("Number Four");
+        four.setSubject("The Fourth Notification");
+        four.setMessage("I can't think up fake data forever.");
+        four.setRead(true);
+        four.setTimeStamp(new Date());
+        Notification five = new Notification();
+        five.setFrom("AJ");
+        five.setSubject("Again?");
+        five.setMessage("Yes, need enough to scroll!");
+        five.setRead(false);
+        five.setTimeStamp(new Date());
         List<Notification> notificationList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            notificationList.add(one);
-            notificationList.add(two);
-        }
+        notificationList.add(one);
+        notificationList.add(two);
+        notificationList.add(three);
+        notificationList.add(four);
+        notificationList.add(five);
         viewModel.setNotifications(notificationList);
     }
 }
