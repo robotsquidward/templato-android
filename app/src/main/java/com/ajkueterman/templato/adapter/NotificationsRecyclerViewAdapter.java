@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.ajkueterman.templato.R;
@@ -25,18 +25,15 @@ import java.util.List;
 public class NotificationsRecyclerViewAdapter extends RecyclerView.Adapter {
 
     private List<Notification> notifications;
-    private Context context;
     private NotificationRecyclerViewCallback callback;
 
     public NotificationsRecyclerViewAdapter(@Nullable List<Notification> notifications,
-                                            @NonNull Context context,
                                             @NonNull NotificationRecyclerViewCallback callback) {
         if (notifications != null) {
             this.notifications = notifications;
         } else {
             this.notifications = new ArrayList<>();
         }
-        this.context = context;
         this.callback = callback;
     }
 
@@ -59,9 +56,9 @@ public class NotificationsRecyclerViewAdapter extends RecyclerView.Adapter {
             notificationsViewHolder.getTimeStamp().setText(notification.getTimeStamp().toString());
 
             if (notification.isRead()) {
-                notificationsViewHolder.getRead().setImageDrawable(context.getDrawable(R.drawable.ic_checkbox_checked));
+                notificationsViewHolder.getRead().setChecked(true);
             } else {
-                notificationsViewHolder.getRead().setImageDrawable(context.getDrawable(R.drawable.ic_checkbox_unchecked));
+                notificationsViewHolder.getRead().setChecked(false);
             }
 
             notificationsViewHolder.getItemView().setOnClickListener(new View.OnClickListener() {
@@ -109,7 +106,7 @@ public class NotificationsRecyclerViewAdapter extends RecyclerView.Adapter {
         private TextView message;
         private TextView from;
         private TextView timeStamp;
-        private ImageView read;
+        private CheckBox read;
 
         NotificationsViewHolder(View itemView) {
             super(itemView);
@@ -141,7 +138,7 @@ public class NotificationsRecyclerViewAdapter extends RecyclerView.Adapter {
             return timeStamp;
         }
 
-        ImageView getRead() {
+        CheckBox getRead() {
             return read;
         }
     }

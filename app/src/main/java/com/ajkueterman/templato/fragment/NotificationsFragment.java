@@ -68,8 +68,7 @@ public class NotificationsFragment extends Fragment
     }
 
     private void setupRecyclerView() {
-        if (getContext() == null) { return; }
-        adapter = new NotificationsRecyclerViewAdapter(viewModel.getNotifications().getValue(), getContext(), this);
+        adapter = new NotificationsRecyclerViewAdapter(viewModel.getNotifications().getValue(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
     }
