@@ -13,12 +13,7 @@ import android.view.MenuItem;
 import com.ajkueterman.templato.fragment.DashboardFragment;
 import com.ajkueterman.templato.fragment.HomeFragment;
 import com.ajkueterman.templato.fragment.NotificationsFragment;
-import com.ajkueterman.templato.model.Notification;
 import com.ajkueterman.templato.viewmodel.MainViewModel;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created by AJ Kueterman on 2/15/18.
