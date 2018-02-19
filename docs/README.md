@@ -18,6 +18,8 @@ But for me (and I'm guessing a handful of others) I know I will want to do some 
 
 ## Enter Templato 
 
+![templato recyclerview](https://github.com/robotsquidward/templato-android/blob/master/images/screenshot-02.png?raw=true)
+
 Templato is a sample application I'm putting together to build a launch pad for my next simple Android App.  It's not going to work for everyone, or every app or idea, but I think it will work for me the next time I want to spin up an MVP.
 
 ### What Templato is
