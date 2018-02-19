@@ -10,6 +10,8 @@ The problem becomes that every time I want to spin up a new project, I still jus
 
 Just to nail the point home, the Android Bottom Navigation Sample app contains an Activity and it's layout with a TextView and navigation.  It doesn't even have a Fragment or layout for any of the three tabs, or any additional common Android components.
 
+![android sample apps](android-sample-screenshot.png)
+
 This makes a lot of sense for the broadest use cases.  Google is not trying to tell you how to do Fragment navigation because there's more than one way to do it.  They're not going to build out layouts because they have no idea how you're going to be utilizing each screen, or even how you'll be implementing the bottom nav at all, maybe you'll be using them as controls for your game.
 
 But for me (and I'm guessing a handful of others) I know I will want to do some basic stuff with my Bottom Nav based app.  I know I want my Fragments to hold layouts.  I know I want my Activity to handle navigation.  I know I want to use an Android ViewModel to manage data across the activity and it's fragments.  I'll probably use a RecyclerView.  This is the kind of thing I want to have handy or be able to easily reference when I'm cranking out boiler plate.
