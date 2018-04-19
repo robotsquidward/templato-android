@@ -13,6 +13,6 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        // todo - initialize dependencies, do any other setup at an application level
+        // initialize dependencies, do any other setup at an application level
     }
 }

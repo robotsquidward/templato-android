@@ -101,7 +101,6 @@ public class NotificationsFragment extends Fragment
     @Override
     public void onNotificationRowTapped(int index) {
         /*
-         * todo
          * You can alter this callback in any way to pass back the data you need from the
          * RecyclerView adapter.
          */
