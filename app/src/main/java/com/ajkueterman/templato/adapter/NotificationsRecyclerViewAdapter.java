@@ -37,14 +37,15 @@ public class NotificationsRecyclerViewAdapter extends RecyclerView.Adapter {
         this.callback = callback;
     }
 
+    @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View rowLayout = LayoutInflater.from(parent.getContext()).inflate(R.layout.holder_notification_row, parent, false);
         return new NotificationsViewHolder(rowLayout);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         final int pos = position;
         if (holder instanceof NotificationsViewHolder && notifications != null && notifications.get(pos) != null) {
             NotificationsViewHolder notificationsViewHolder = (NotificationsViewHolder) holder;
