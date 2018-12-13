@@ -1,6 +1,6 @@
 # [Templato](https://ajkueterman.com/templato-android/)
 
-:warning: Templato is currently in hibernation while I work on other projects. I'll hopefully return to get it up to date soon. :warning:
+> :warning: Templato is currently in hibernation while I work on other projects. I'll hopefully return to get it up to date soon. :warning:
 
 Templato is a simple Android template/example app.  It's mostly meant to be used as a reference for building out a very simple Android client.
 
